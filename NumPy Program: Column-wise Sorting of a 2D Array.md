@@ -13,38 +13,16 @@ To write a *NumPy* program that sorts the elements in each column of a given 2D 
 
 ## 🧾 Program
 ```
-
-import numpy as np
-
-# Accept input for 2D array
-rows = int(input("Enter number of rows: "))
-cols = int(input("Enter number of columns: "))
-
-print("Enter the elements row-wise (space-separated):")
-arr = []
-for i in range(rows):
-    arr.append(list(map(int, input().split())))
-
-# Convert to NumPy array
-array = np.array(arr)
-
-# Column-wise sorting
-sorted_array = np.sort(array, axis=0)
-
-# Display results
-print("\nOriginal Array:")
-print(array)
-
-print("\nColumn-wise Sorted Array:")
-print(sorted_array)
-
+import numpy as np 
+a=np.array(eval(input())) 
+print("Given array") 
+print(end=" ") 
+print(a) 
+print() 
+print(np.sort(a,axis=0))
 ```
+## Output:
+<img width="602" height="252" alt="483891827-5e688c6b-220f-43d7-ba30-251898710183" src="https://github.com/user-attachments/assets/e8459248-706a-4ad3-b13b-46f3ee78a3dd" />
 
-
-## Output
-<img width="556" height="324" alt="image" src="https://github.com/user-attachments/assets/71b611b1-9f43-4f95-b3ab-ef25d76c19a5" />
-
-
-
-## Result
-The program successfully accepts a 2D array from the user, sorts each column in ascending order, and prints both the original and column-wise sorted arrays using NumPy.
+## Result:
+The program has been executed successfully.
