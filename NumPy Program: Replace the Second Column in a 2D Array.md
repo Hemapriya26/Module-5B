@@ -10,30 +10,21 @@ To write a *NumPy* program that deletes the second column from a given 2D array 
 4. *Insert Column*: Use np.insert() to insert the new column at the second column's original position.
 5. *Display Result*: Print the updated array with the replaced column.
 
-## 🧾 Program
+## 🧾 Program:
 ```
-import numpy as np
-
-# Define the original 2D array
-arr = np.array([[1, 2, 3],
-                [4, 5, 6],
-                [7, 8, 9]])
-
-# Delete the second column (index 1)
-arr_deleted = np.delete(arr, 1, axis=1)
-
-# Define the new column to insert
-new_col = np.array([10, 11, 12])
-
-# Insert the new column at the same position (index 1)
-arr_modified = np.insert(arr_deleted, 1, new_col, axis=1)
-
-print("Original array:\n", arr)
-print("Array after deleting second column:\n", arr_deleted)
-print("Array after inserting new column:\n", arr_modified)
+import numpy as np  
+a=np.array(eval(input())) 
+b=np.array(eval(input())) 
+print("Printing Original array") 
+print(a) 
+print("Array after deleting column 2 on axis 1") 
+c=np.delete(a,1,axis=1)  
+print(c) 
+print("Array after inserting column 2 on axis 1") 
+print(np.insert(c,1,b,axis=1))
 ```
-## Output
-![WhatsApp Image 2025-10-14 at 22 03 59_5433ce25](https://github.com/user-attachments/assets/91fcc2be-650e-4e73-88d4-be77657d376e)
+## Output:
+<img width="744" height="218" alt="483892296-03bdf412-acb9-423d-bcad-9e83d6b9db91" src="https://github.com/user-attachments/assets/ed874740-2d5d-41ca-b09b-89d3655d6305" />
 
-## Result
-The program successfully deletes the second column from 2D array using numpy
+## Result:
+The program has been executed successfully.
