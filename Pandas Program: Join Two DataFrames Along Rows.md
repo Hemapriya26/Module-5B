@@ -1,4 +1,4 @@
-# 🧪 Pandas Program: Join Two DataFrames Along Rows
+``# 🧪 Pandas Program: Join Two DataFrames Along Rows
 
 ## 🎯 AIM
 
@@ -18,25 +18,31 @@ To write a Python program using Pandas to *join two DataFrames along rows* (row-
 
 ## 💻 Program
 ```
-import pandas as pd 
-student_data1 = pd.DataFrame({ 
-'student_id': ['S1', 'S2', 'S3', 'S4', 'S5'], 
-'name': ['Danniella Fenton', 'Ryder Storey', 'Bryce Jensen', 'Ed Bernal', 'Kwame Morin'],  
-'marks': [200, 210, 190, 222, 199]}) 
-student_data2 = pd.DataFrame({ 
-'student_id': ['S4', 'S5', 'S6', 'S7', 'S8'], 
-'name': ['Scarlette Fisher', 'Carla Williamson', 'Dante Morse', 'Kaiser William', 'Madeeha Preston'],  
-'marks': [201, 200, 198, 219, 201]}) 
-print("Original DataFrames:") 
-print(student_data1) 
-print("-------------------------------------") 
-print(student_data2) 
-print("\nJoin the said two dataframes along rows:") 
-result_data = pd.concat([student_data1, student_data2]) 
-print(result_data)
-```
-## Output:
-<img width="714" height="491" alt="483892383-ca7c8393-55d8-42f9-a23d-cfc8785b8dc8" src="https://github.com/user-attachments/assets/3c14ecd3-c9dc-4ba6-a8c6-16ee31202b8a" />
 
-## Result:
-The program has been executed successfully.
+import pandas as pd
+df1=pd.DataFrame({
+    's_id':['S1','S2','S3','S4','S5'],
+    'name':['Dan','Ryder','Bryce','Bernal','Kwame'],
+    'marks':[200, 210, 190, 222,199]
+})
+df2=pd.DataFrame({
+    's_id':['S4','S5','S6','S7','S8'],
+    'name':['Scart','Willy','Dani','Kaise','Madeeha'],
+    'marks':[201,200,198,219,201]
+})
+res=pd.concat([df1,df2],axis=0)
+print("Original DataFrames:")
+print(df1)
+print("-------------------------------------")
+print(df2)
+print()
+print("Join the said two dataframes along rows:")
+print(res)
+```
+
+## Output
+![WhatsApp Image 2025-10-19 at 20 15 44_dd318762](https://github.com/user-attachments/assets/c6a92bd3-519d-4d9b-b166-08d1702aa609)
+
+
+## Result
+The program successfully *join two DataFrames along rows* (row-wise concatenation) and assign all data to a new DataFrame.
