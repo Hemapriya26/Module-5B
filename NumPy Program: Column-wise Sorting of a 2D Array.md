@@ -22,7 +22,8 @@ print()
 print(np.sort(a,axis=0))
 ```
 ## Output:
-<img width="602" height="252" alt="483891827-5e688c6b-220f-43d7-ba30-251898710183" src="https://github.com/user-attachments/assets/e8459248-706a-4ad3-b13b-46f3ee78a3dd" />
+![WhatsApp Image 2025-10-19 at 20 02 57_d0e3624a](https://github.com/user-attachments/assets/0e66977c-c84e-40ac-a278-7e829ad11033)
+
 
 ## Result:
 The program has been executed successfully.
